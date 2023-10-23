@@ -1,3 +1,7 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     margin: 0;
     overflow-x: hidden;
@@ -29,19 +33,40 @@ body {
     .kalkulator_background {
         background-color: rgba($color: grey, $alpha: 0.8);
         padding: 5px;
+
+        .screen {
+            border: 5px solid white;
+            border-radius: 5px;
+            text-align: right;
+            font-size: 24px;
+            padding: 5px;
+        }
+
+        .pad {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            //grid-template-rows: auto;
+            place-items: center;
+            gap: 10px;
+            height: 80%;
+            .pad_button {
+                display: flex;
+                border: 1px solid black;
+                height: 50px;
+                width: 50px;
+                padding: 5px;
+                justify-content: center;
+                font-size: 25px;
+                align-items: center;
+            }
+        }
     }
 
     .algorytmy_background {
         background-color: yellow;
     }
 
-    .screen {
-        border: 5px solid white;
-        border-radius: 5px;
-        text-align: right;
-        font-size: 24px;
-        padding: 5px;
-    }
+    
 }
 
 
