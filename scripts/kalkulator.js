@@ -20,7 +20,7 @@ function calculate() {
 
         if(!isNaN(results)) {
             if(isFinite(results)) {
-                screen.value = results;
+                screen.value = results.toFixed(2);
             }
             else {
                 alert("Proszę nie dzielić przez 0")
