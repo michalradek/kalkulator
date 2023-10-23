@@ -1,6 +1,6 @@
 screen = document.getElementById('screen');
 
-function Show(value) {
-    screen.value = "";
-    screen.value += value;
+
+function show(value) {
+    screen.innerHTML += value;
 }

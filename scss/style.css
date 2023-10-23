@@ -41,6 +41,14 @@ body .kalkulator_background .screen {
   text-align: right;
   font-size: 24px;
   padding: 5px;
+  height: 24px;
+  background-color: transparent;
+}
+body .kalkulator_background .screen::-moz-placeholder {
+  color: white;
+}
+body .kalkulator_background .screen::placeholder {
+  color: white;
 }
 body .kalkulator_background .screen, body .kalkulator_background .pad_button {
   color: white;
@@ -66,8 +74,11 @@ body .kalkulator_background .pad .pad_button {
 body .kalkulator_background .pad .eq, body .kalkulator_background .pad .minus, body .kalkulator_background .pad .plus, body .kalkulator_background .pad .times, body .kalkulator_background .pad .div, body .kalkulator_background .pad .comma {
   background-color: rgb(255, 166, 0);
 }
-body .kalkulator_background .pad .num {
+body .kalkulator_background .pad .num, body .kalkulator_background .pad .c, body .kalkulator_background .pad .del {
   border: 1px solid white;
+}
+body .kalkulator_background .pad .pad_button:nth-child(-n+2) {
+  grid-column: span 2;
 }
 body .algorytmy_background {
   background-color: yellow;

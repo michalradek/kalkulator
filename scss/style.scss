@@ -43,8 +43,13 @@ body {
             text-align: right;
             font-size: 24px;
             padding: 5px;
+            height: 24px;
+            background-color: transparent;
         }
 
+        .screen::placeholder {
+            color: white;
+        }
         .screen, .pad_button {
             color: white;
         }
@@ -69,8 +74,12 @@ body {
             .eq, .minus, .plus, .times, .div, .comma {
                 background-color: $yellow;
             }
-            .num {
+            .num, .c, .del {
                 border: 1px solid white;
+            }
+            .pad_button:nth-child(-n+2) {
+                grid-column: span 2;
+                //grid-row: 1;
             }
         }
     }
