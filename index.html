@@ -15,24 +15,24 @@
     <div class="background"></div>
     <div class="kalkulator_container">
         <div class="kalkulator_background">
-            <input class="screen" id="screen" placeholder="0"></input>
+            <input type="text" class="screen" id="screen" readonly placeholder="0">
             <div class="pad">
-                <button class="pad_button c">C</button>
+                <button class="pad_button c" onclick="clearDisplay()">C</button>
                 <button class="pad_button del"><i class="fa-solid fa-delete-left"></i></button>
                 <button class="pad_button num" onclick="show('7')">7</button>
                 <button class="pad_button num" onclick="show('8')">8</button>
-                <button class="pad_button num" id="pad9">9</button>
+                <button class="pad_button num" onclick="show('9')">9</button>
                 <button class="pad_button times">x</button>
-                <button class="pad_button num" id="pad4">4</button>
-                <button class="pad_button num" id="pad5">5</button>
-                <button class="pad_button num" id="pad6">6</button>
+                <button class="pad_button num" onclick="show('4')">4</button>
+                <button class="pad_button num" onclick="show('5')">5</button>
+                <button class="pad_button num" onclick="show('6')">6</button>
                 <button class="pad_button minus">-</button>
-                <button class="pad_button num" id="pad1">1</button>
-                <button class="pad_button num" id="pad2">2</button>
-                <button class="pad_button num" id="pad3">3</button>
+                <button class="pad_button num" onclick="show('1')">1</button>
+                <button class="pad_button num" onclick="show('2')">2</button>
+                <button class="pad_button num" onclick="show('3')">3</button>
                 <button class="pad_button plus">+</button>
                 <button class="pad_button eq">=</button>
-                <button class="pad_button num" id="pad0">0</button>
+                <button class="pad_button num" onclick="show('0')">0</button>
                 <button class="pad_button comma">,</button>
                 <button class="pad_button div">/</button>
             </div>
