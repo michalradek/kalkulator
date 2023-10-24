@@ -13,34 +13,36 @@
 </head>
 <body>
     <div class="background"></div>
-    <div class="kalkulator_container">
-        <div class="kalkulator_background">
+    <div class="kalkulatorContainer">
+        <div class="kalkulatorBackground">
             <input type="text" class="screen" id="screen" readonly placeholder="0">
             <div class="pad">
-                <button class="pad_button c" onclick="clearDisplay()">C</button>
-                <button class="pad_button del" onclick="deleteLast()"><i class="fa-solid fa-delete-left"></i></button>
-                <button class="pad_button num" onclick="show('7')">7</button>
-                <button class="pad_button num" onclick="show('8')">8</button>
-                <button class="pad_button num" onclick="show('9')">9</button>
-                <button class="pad_button times" onclick="show('*')">x</button>
-                <button class="pad_button num" onclick="show('4')">4</button>
-                <button class="pad_button num" onclick="show('5')">5</button>
-                <button class="pad_button num" onclick="show('6')">6</button>
-                <button class="pad_button minus" onclick="show('-')">-</button>
-                <button class="pad_button num" onclick="show('1')">1</button>
-                <button class="pad_button num" onclick="show('2')">2</button>
-                <button class="pad_button num" onclick="show('3')">3</button>
-                <button class="pad_button plus" onclick="show('+')">+</button>
-                <button class="pad_button eq" onclick="calculate()">=</button>
-                <button class="pad_button num" onclick="show('0')">0</button>
-                <button class="pad_button comma" onclick="show('.')">.</button>
-                <button class="pad_button div" onclick="show('/')">/</button>
+                <button class="padButton c" onclick="clearDisplay()">C</button>
+                <button class="padButton del" onclick="deleteLast()"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="padButton num" onclick="show('7')">7</button>
+                <button class="padButton num" onclick="show('8')">8</button>
+                <button class="padButton num" onclick="show('9')">9</button>
+                <button class="padButton yellowPadButton" onclick="show('*')">x</button>
+                <button class="padButton num" onclick="show('4')">4</button>
+                <button class="padButton num" onclick="show('5')">5</button>
+                <button class="padButton num" onclick="show('6')">6</button>
+                <button class="padButton yellowPadButton" onclick="show('-')">-</button>
+                <button class="padButton num" onclick="show('1')">1</button>
+                <button class="padButton num" onclick="show('2')">2</button>
+                <button class="padButton num" onclick="show('3')">3</button>
+                <button class="padButton yellowPadButton" onclick="show('+')">+</button>
+                <button class="padButton yellowPadButton" onclick="calculate()">=</button>
+                <button class="padButton num" onclick="show('0')">0</button>
+                <button class="padButton yellowPadButton" onclick="show('.')">.</button>
+                <button class="padButton yellowPadButton" onclick="show('/')">/</button>
             </div>
+            <div class="downButton"><a href="#algorytmySection"><i class="fa-solid fa-caret-down pointerDown"></i></a></div>
         </div>
     </div>
-    <div class="algorytmy_container">
-        <div class="algorytmy_background"></div>
+    <div id="algorytmySection" id="algorytmyContainer" class="algorytmyContainer">
+        <div class="algorytmyBackground"></div>
     </div>
     <script src="scripts/kalkulator.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
