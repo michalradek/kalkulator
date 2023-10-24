@@ -78,12 +78,20 @@ body .kalkulatorBackground .downButton {
   justify-content: center;
   align-items: center;
 }
+body .kalkulatorBackground .downButton .buttonHref {
+  text-decoration: none;
+  color: black;
+}
+body .kalkulatorBackground .downButton .buttonHref:active {
+  -webkit-tap-highlight-color: transparent;
+}
 body .kalkulatorBackground .downButton .pointerDown {
   height: 25px;
   width: 25px;
+  color: white;
   font-size: 25px;
   text-align: center;
-  background-color: aqua;
+  border: 1px solid white;
   border-radius: 100%;
   padding: 3vw;
 }
