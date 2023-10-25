@@ -20,14 +20,14 @@ body {
         z-index: -1;
     }
 
-    .kalkulatorContainer, .algorytmyContainer {
+    .kalkulatorContainer{
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .kalkulatorBackground, .algorytmyBackground {
+    .kalkulatorBackground {
         height: 85vh;
         width: 75vw;
         border-radius: 5px;
@@ -37,7 +37,6 @@ body {
         background-color: transparent;
         padding: 5px;
         .screen {
-            //border-width: 5px;
             border-image: linear-gradient(45deg, white, $yellow) 1;
             text-align: right;
             font-size: 22px;
@@ -83,13 +82,16 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+
             .buttonHref {
                 text-decoration: none;
                 color:black;
             }
+
             .buttonHref:active {
                 -webkit-tap-highlight-color: transparent;
             }
+
             .pointerDown {
                 height: 25px;
                 width: 25px;
@@ -102,14 +104,7 @@ body {
             }
         }
     }
-
-    .algorytmy_background {
-        background-color: yellow;
-    }
-
-    
 }
-
 
 @media only screen and (min-width: 600px) {
 

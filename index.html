@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator i Algorytmy</title>
-    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="background"></div>
-    <div class="kalkulatorContainer">
+    <div class="kalkulatorContainer" id="kalkulatorContainer">
         <div class="kalkulatorBackground">
             <input type="text" class="screen" id="screen" readonly placeholder="0">
             <div class="pad">
@@ -36,11 +36,14 @@
                 <button class="padButton yellowPadButton" onclick="show('.')">.</button>
                 <button class="padButton yellowPadButton" onclick="show('/')">/</button>
             </div>
-            <div class="downButton"><a href="#algorytmySection" class="buttonHref"><i class="fa-solid fa-caret-down pointerDown"></i></a></div>
+            <div class="downButton"><a href="#algorytmyContainer" class="buttonHref"><i class="fa-solid fa-caret-down pointerDown"></i></a></div>
         </div>
     </div>
-    <div id="algorytmySection" id="algorytmyContainer" class="algorytmyContainer">
-        <div class="algorytmyBackground"></div>
+
+    <div id="algorytmyContainer" class="algorytmyContainer">
+        <div class="algorytmyBackground">
+            <div class="upButton"><a href="#kalkulatorContainer" class="upbuttonHref"><i class="fa-solid fa-caret-up pointerUp"></i></a></div>
+        </div>
     </div>
     <script src="scripts/kalkulator.js"></script>
     <script src="scripts/script.js"></script>

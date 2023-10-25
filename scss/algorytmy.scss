@@ -1,0 +1,33 @@
+.upButton {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .upbuttonHref {
+        text-decoration: none;
+        color:black;
+    }
+
+    .upbuttonHref:active {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .pointerUp {
+        height: 25px;
+        width: 25px;
+        color: black;
+        font-size: 25px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 100%;
+        padding: 3vw;
+    }
+}
+
+.algorytmyBackground {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
