@@ -25,9 +25,15 @@
     }
 }
 
-.algorytmyBackground {
+.algorytmyContainer {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.algorytmyBackground {
+    height: 85vh;
+    width: 75vw;
+    border-radius: 5px;
 }
