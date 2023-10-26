@@ -39,14 +39,24 @@
             <div class="downButton"><a href="#algorytmyContainer" class="buttonHref"><i class="fa-solid fa-caret-down pointerDown"></i></a></div>
         </div>
     </div>
-
     <div id="algorytmyContainer" class="algorytmyContainer">
         <div class="upButton"><a href="#kalkulatorContainer" class="upbuttonHref"><i class="fa-solid fa-caret-up pointerUp"></i></a></div>
         <div class="algorytmyBackground">
-            
+            <label for="selectAlgorytm">Wybierz algorytm</label>
+            <select id="selectAlgorytm" class="selectAlgorytm">
+                <option value="silnia">Silnia</option>
+                <option value="rwd">RWD</option>
+            </select>
+            <div class="silnia">
+                <label for="silniaInput">Wprowadź liczbę dla której chcesz obliczyć silnię</label>
+                <input id="silniaInput" class="silniaInput" type="numer">
+                <div class="silniaResult">
+                    <p>Silnia z <span class = "silniaZ">0</span> wynosi <span class="silniaResultSpan"></span></p>
+                </div>
+            </div>
         </div>
     </div>
     <script src="scripts/kalkulator.js"></script>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/silnia.js"></script>
 </body>
 </html>
