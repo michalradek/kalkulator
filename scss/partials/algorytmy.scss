@@ -40,25 +40,28 @@
         border: 1px solid black;
         text-align: center;
 
+        .selectAlgorytm, .silnia, .silniaInput, .silniaButton, .silniaZ {
+            width: 80%;
+        }
         .selectAlgorytm {
             height: 5vh;
             background-color: transparent;
             border-radius: 5px;
             border: 1px solid black;
-            width: 80%;
         }
 
         .silnia {
+            visibility: hidden;
             text-align: center;
             display: flex;
             gap: 5vh;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
-            .silniaInput {
-                width: 80%;
-            }
+        }
+
+        .test {
+            visibility: hidden;
         }
     }
 }

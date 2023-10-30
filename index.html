@@ -44,19 +44,22 @@
         <div class="algorytmyBackground">
             <label for="selectAlgorytm">Wybierz algorytm</label>
             <select id="selectAlgorytm" class="selectAlgorytm">
-                <option value="silnia">Silnia</option>
-                <option value="rwd">RWD</option>
+                <option default value="silnia">Silnia</option>
+                <option value="test">RWD</option>
             </select>
-            <div class="silnia">
+            <div class="silnia" id="silnia">
                 <label for="silniaInput">Wprowadź liczbę dla której chcesz obliczyć silnię</label>
                 <input id="silniaInput" class="silniaInput" type="numer">
+                <button id ="silniaButton" class="silniaButton">Oblicz</button>
                 <div class="silniaResult">
-                    <p>Silnia z <span class = "silniaZ">0</span> wynosi <span class="silniaResultSpan"></span></p>
+                    <p>Silnia z <span class = "silniaZ">0</span> wynosi <span class="silniaResultSpan" id="silniaResultSpan">0</span></p>
                 </div>
             </div>
+            <div id="test">112312312312321</div>
         </div>
     </div>
     <script src="scripts/kalkulator.js"></script>
+    <script src="scripts/script.js"></script>
     <script src="scripts/silnia.js"></script>
 </body>
 </html>
