@@ -166,7 +166,7 @@ body .kalkulatorBackground .downButton .pointerDown {
   border: 1px solid black;
   text-align: center;
 }
-.algorytmyContainer .algorytmyBackground .selectAlgorytm, .algorytmyContainer .algorytmyBackground .silnia, .algorytmyContainer .algorytmyBackground .silniaInput, .algorytmyContainer .algorytmyBackground .silniaButton, .algorytmyContainer .algorytmyBackground .silniaZ {
+.algorytmyContainer .algorytmyBackground .selectAlgorytm, .algorytmyContainer .algorytmyBackground .algorytm, .algorytmyContainer .algorytmyBackground .algorytmInput, .algorytmyContainer .algorytmyBackground .algorytmButton {
   width: 80%;
 }
 .algorytmyContainer .algorytmyBackground .selectAlgorytm {
@@ -175,8 +175,7 @@ body .kalkulatorBackground .downButton .pointerDown {
   border-radius: 5px;
   border: 1px solid black;
 }
-.algorytmyContainer .algorytmyBackground .silnia {
-  visibility: hidden;
+.algorytmyContainer .algorytmyBackground .algorytm {
   text-align: center;
   display: flex;
   gap: 5vh;
@@ -184,7 +183,7 @@ body .kalkulatorBackground .downButton .pointerDown {
   justify-content: center;
   align-items: center;
 }
-.algorytmyContainer .algorytmyBackground .test {
+.algorytmyContainer .algorytmyBackground .algorytm .fibonaciP {
   visibility: hidden;
 }
 

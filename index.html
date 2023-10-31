@@ -45,21 +45,19 @@
             <label for="selectAlgorytm">Wybierz algorytm</label>
             <select id="selectAlgorytm" class="selectAlgorytm">
                 <option default value="silnia">Silnia</option>
-                <option value="test">RWD</option>
+                <option value="fibonaci">Ciąg Fibonaciego</option>
             </select>
-            <div class="silnia" id="silnia">
-                <label for="silniaInput">Wprowadź liczbę dla której chcesz obliczyć silnię</label>
-                <input id="silniaInput" class="silniaInput" type="numer" required>
-                <button id ="silniaButton" class="silniaButton">Oblicz</button>
-                <div class="silniaResult">
-                    <p>Silnia z <span class = "silniaZ" id="silniaZ">0</span> wynosi <span class="silniaResultSpan" id="silniaResultSpan">0</span></p>
-                </div>
+            <div class="algorytm" id="algorytm">
+                <label for="algorytmInput" id="algorytmLabel">Wprowadź liczbę dla której chcesz obliczyć silnię</label>
+                <input id="algorytmInput" class="algorytmInput" type="number" required>
+                <button id ="algorytmButton" class="algorytmButton">Oblicz</button>
+                <p id="algorytmP">1</p>
             </div>
-            <div id="test">112312312312321</div>
         </div>
     </div>
     <script src="scripts/kalkulator.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/silnia.js"></script>
+    <script src="scripts/fibonaci.js"></script>
 </body>
 </html>

@@ -40,7 +40,7 @@
         border: 1px solid black;
         text-align: center;
 
-        .selectAlgorytm, .silnia, .silniaInput, .silniaButton, .silniaZ {
+        .selectAlgorytm, .algorytm, .algorytmInput, .algorytmButton {
             width: 80%;
         }
         .selectAlgorytm {
@@ -50,18 +50,17 @@
             border: 1px solid black;
         }
 
-        .silnia {
-            visibility: hidden;
+        .algorytm {
             text-align: center;
             display: flex;
             gap: 5vh;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
 
-        .test {
-            visibility: hidden;
+            .fibonaciP {
+                visibility: hidden;
+            }
         }
     }
 }

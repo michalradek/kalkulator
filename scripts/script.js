@@ -1,15 +1,26 @@
 const select = document.getElementById("selectAlgorytm");
-const silnia = document.getElementById("silnia");
-const test = document.getElementById("test");
-
-function setVisibility(selectedId) {
-    silnia.style.visibility = (selectedId === 'silnia') ? 'visible' : 'hidden';
-    test.style.visibility = (selectedId === 'test') ? 'visible' : 'hidden'; 
-}
-
-
-select.addEventListener('change', function() {
-    setVisibility(select.value);
+const label = document.getElementById("algorytmLabel");
+const button = document.getElementById("algorytmButton");
+const silniaZ = document.getElementById('silniaZ');
+const silniaResultSpan = document.getElementById('silniaResultSpan');
+const input = document.getElementById('algorytmInput');
+const algorytmP = document.getElementById('algorytmP');
+select.addEventListener("change", function() {
+    
+    if(select.value == 'silnia') {
+        label.innerHTML = "Wprowadź liczbę dla której chcesz obliczyć silnię"
+    }
+    else if(select.value == 'fibonaci') {
+        label.innerHTML = "Wprowadź liczbę dla której chcesz obliczyć ciąg Fibonaciego";
+    }
 })
 
-setVisibility(select.value);
+button.addEventListener("click", function() {
+    if(select.value == 'silnia') {
+        let a = silniaFun(input.value);
+        alert(a);
+    } 
+    else if(select.value == 'fibonaci') {   
+        
+    }
+})
